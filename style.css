@@ -22,6 +22,10 @@
     background-color: #9A9A9A;
 }
 
+.heading {
+    font-size: 80px;
+}
+
 .title {
     font-size: 62px;
 }
@@ -29,6 +33,20 @@
 .description {
     font-size: 23px;
 }
+
+
+.card-radius {
+    border-radius: 40px;
+}
+
+.how-it-works-title {
+    font-size: 45px;
+}
+
+.parallax-img {
+    width: 444px;
+}
+
 
 
 /* Google and Apple Buttons */
@@ -39,13 +57,60 @@
 }
 
 
-
+/* Fonts */
 
 @font-face {
-    font-family: "fontfutura";
-    src: url("https://fonts.googleapis.com/css?family=Open+Sans") format("ttf");
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'quiche-regular';
+    src: url('./public/fonts/quiche/Quiche_Display_Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'quiche-bold';
+    src: url('./public/fonts/quiche/Quiche_Display_Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'quiche-light';
+    src: url('./public/fonts/quiche/Quiche_Display_Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'hk-regular';
+    src: url('./public/fonts/hk-grostesk/HKGrotesk-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'hk-bold';
+    src: url('./public/fonts/hk-grostesk/HKGrotesk-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'hk-light';
+    src: url('./public/fonts/hk-grostesk/HKGrotesk-Light.otf') format('opentype');
+}
+
+.quiche-bold{
+    font-family: 'quiche-bold';
+}
+
+.quiche-regular{
+    font-family: 'quiche-regular';
+}
+
+.quiche-light{
+    font-family: 'quiche-light';
+}
+
+.hk-bold{
+    font-family: 'hk-bold';
+}
+
+.hk-regular{
+    font-family: 'hk-regular';
+}
+
+.hk-light{
+    font-family: 'hk-light';
 }
 
 a.btn-google {
@@ -135,4 +200,27 @@ a.btn-google {
     left: 40px;
     font-size: 10px;
     font-weight: 400;
+}
+
+/* Card Over Card Animation */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Empty sections with grey background */
+.empty-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Each card wrapper has 15vh top padding */
+.card-wrapper {
+    position: relative;
+    margin: auto;
 }
