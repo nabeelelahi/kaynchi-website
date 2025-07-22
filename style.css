@@ -28,10 +28,12 @@
 
 .title {
     font-size: 62px;
+    line-height: 63px;
 }
 
 .description {
     font-size: 23px;
+    line-height: 23px;
 }
 
 
@@ -49,12 +51,6 @@
 
 
 
-/* Google and Apple Buttons */
-
-.bn46 {
-    width: 150px;
-    height: 50px;
-}
 
 
 /* Fonts */
@@ -89,28 +85,65 @@
     src: url('./public/fonts/hk-grostesk/HKGrotesk-Light.otf') format('opentype');
 }
 
-.quiche-bold{
+.quiche-bold {
     font-family: 'quiche-bold';
 }
 
-.quiche-regular{
+.quiche-regular {
     font-family: 'quiche-regular';
 }
 
-.quiche-light{
+.quiche-light {
     font-family: 'quiche-light';
 }
 
-.hk-bold{
+.hk-bold {
     font-family: 'hk-bold';
 }
 
-.hk-regular{
+.hk-regular {
     font-family: 'hk-regular';
 }
 
-.hk-light{
+.hk-light {
     font-family: 'hk-light';
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+
+    .title {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    
+    .description{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    
+    .heading{
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .how-it-works-title{
+        font-size: 25px;
+    }
+
+    .hidden-sm{
+        display: none;
+    }
+
+}
+
+/* Google and Apple Buttons */
+
+.bn46 {
+    width: 150px;
+    height: 50px;
 }
 
 a.btn-google {
