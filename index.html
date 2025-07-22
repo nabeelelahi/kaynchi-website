@@ -13,7 +13,7 @@
 
 <body>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-white bg-white">
+    <nav class="navbar fixed-top navbar-white bg-white py-4">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <div class="bg-purple rounded-pill px-1 py-1 d-flex align-items-center">
@@ -25,7 +25,7 @@
         </div>
     </nav>
     <!-- Hero Section 1 -->
-    <section class="my-2">
+    <section class="my-5">
         <div class="container">
             <div class="row my-md-5 my-3">
                 <div class="col-md-6 col-12">
@@ -90,7 +90,7 @@
         </div>
     </section>
     <!-- Mobile Section -->
-    <section data-w-id="b8516317-60b5-e028-d661-10049d6852a3" class="posse_screen_section my-5">
+    <section data-w-id="b8516317-60b5-e028-d661-10049d6852a3" class="posse_screen_section my-5 py-5">
         <div class="container">
             <img src="/public/images/artists/1.png" loading="eager" width="228" alt="Kaynchi Artist"
                 class="screen_image_2 hidden-sm" />
@@ -106,9 +106,20 @@
         </div>
     </section>
     <!-- Card Section -->
+
     <section class="my-5">
-        <div class="my-5 container cards">
-            <div class="card-wrapper">
+        <div class="container">
+            <!-- Tab links -->
+            <div class="d-flex justify-content-center">
+                <div class="tab bg-pink rounded-pill p-2">
+                    <button class="tablinks me-2 px-5 py-2 rounded-pill hk-bold active" onclick="openCity(event, 'Artist')">Artist</button>
+                    <button class="tablinks mx-2 px-5 py-2 rounded-pill hk-bold" onclick="openCity(event, 'Studio')">Studio</button>
+                    <button class="tablinks mx-2 px-5 py-2 rounded-pill hk-bold" onclick="openCity(event, 'Consumer')">Consumer</button>
+                    <button class="tablinks ms-2 px-5 py-2 rounded-pill hk-bold" onclick="openCity(event, 'Safety')">Safety</button>
+                </div>
+            </div>
+            <!-- Tab content -->
+            <div id="Artist" class="tabcontent py-4" style="display: block;">
                 <div class="bg-purple card-radius pt-5 my-2">
                     <div class="row">
                         <div class="col-md-6 col-12">
@@ -129,83 +140,67 @@
                     </div>
                 </div>
             </div>
-            <div class="card-wrapper">
-                <div class="bg-purple card-radius pt-5 my-2">
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <div class="px-md-5 px-3 h-100 d-flex flex-column justify-content-center align-items-start">
-                                <h1 class="text-white hk-bold">
-                                    Get <span class="quiche-regular">recognized</span> for <br /> your work and <span
-                                        class="quiche-regular">create</span>
-                                    <br />your own brand.
-                                </h1>
-                                <button class="btn bg-white rounded-pill hk-bold">Start earning now</button>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img class="img-fluid" src="/public/images/card-1.png" alt="" />
-                            </div>
-                        </div>
-                    </div>
+
+            <div id="Studio" class="tabcontent">
+                <h3>Studio</h3>
+                <p>Studio is the capital of France.</p>
+            </div>
+
+            <div id="Consumer" class="tabcontent">
+                <h3>Consumer</h3>
+                <p>Consumer is the capital of Japan.</p>
+            </div>
+
+            <div id="Safety" class="tabcontent">
+                <h3>Safety</h3>
+                <p>Safety is the capital of Japan.</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- <section class="my-5">
+        <div class="my-5 container">
+            <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center bg-pink rounded-pill p-2">
+                    <button class="btn btn-dark bg-purple text-white px-5 py-2 rounded-pill hk-bold mx-1">Arist</button>
+                    <button class="btn btn-dark bg-purple text-white px-5 py-2 rounded-pill hk-bold mx-1">Studio</button>
+                    <button class="btn btn-dark bg-purple text-white px-5 py-2 rounded-pill hk-bold mx-1">Consumer</button>
+                    <button class="btn btn-dark bg-purple text-white px-5 py-2 rounded-pill hk-bold mx-1">Safety</button>
                 </div>
             </div>
-            <div class="card-wrapper">
-                <div class="bg-purple card-radius pt-5 my-2">
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <div class="px-md-5 px-3 h-100 d-flex flex-column justify-content-center align-items-start">
-                                <h1 class="text-white hk-bold">
-                                    Get <span class="quiche-regular">recognized</span> for <br /> your work and <span
-                                        class="quiche-regular">create</span>
-                                    <br />your own brand.
-                                </h1>
-                                <button class="btn bg-white rounded-pill hk-bold">Start earning now</button>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img class="img-fluid" src="/public/images/card-1.png" alt="" />
-                            </div>
+            <div class="bg-purple card-radius pt-5 my-2">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="px-md-5 px-3 h-100 d-flex flex-column justify-content-center align-items-start">
+                            <h1 class="text-white hk-bold">
+                                Get <span class="quiche-regular">recognized</span> for <br /> your work and <span
+                                    class="quiche-regular">create</span>
+                                <br />your own brand.
+                            </h1>
+                            <button class="btn bg-white rounded-pill hk-bold">Start earning now</button>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="card-wrapper">
-                <div class="bg-purple card-radius pt-5 my-2">
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <div class="px-md-5 px-3 h-100 d-flex flex-column justify-content-center align-items-start">
-                                <h1 class="text-white hk-bold">
-                                    Get <span class="quiche-regular">recognized</span> for <br /> your work and <span
-                                        class="quiche-regular">create</span>
-                                    <br />your own brand.
-                                </h1>
-                                <button class="btn bg-white rounded-pill hk-bold">Start earning now</button>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img class="img-fluid" src="/public/images/card-1.png" alt="" />
-                            </div>
+                    <div class="col-md-6 col-12">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img class="img-fluid" src="/public/images/card-1.png" alt="" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- How it works - Consumer -->
-    <section class="my-2">
+    <section class="my-5">
         <div class="container">
             <div class="d-flex flex-column align-items-center">
                 <div>
-                    <h1 class="heading text-center hk-bold">How it works?</h1>
-                    <h1 class="heading text-purple text-end quiche-bold">Consumer</h1>
+                    <h1 class="heading text-center hk-bold m-0">How it works?</h1>
+                    <h1 class="heading text-purple text-center quiche-bold m-0">Consumer</h1>
                 </div>
             </div>
             <div class="row my-md-5 my-3">
                 <div class="col-md-6 col-12 my-5">
-                    <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-start">
+                    <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-center">
                         <div class="text-center d-flex flex-column w-75">
                             <span class="how-it-works-title quiche-bold text-purple">01
                             </span>
@@ -244,7 +239,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-12 my-5">
-                    <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-start">
+                    <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-center">
                         <div class="text-center d-flex flex-column w-75">
                             <span class="how-it-works-title quiche-bold text-purple">03
                             </span>
@@ -284,79 +279,99 @@
         </div>
     </section>
     <!-- How it works - Artist -->
-    <section class="my-2">
+    <section class="my-5">
         <div class="container">
             <div class="d-flex flex-column align-items-center">
                 <div>
                     <h1 class="heading text-center hk-bold">How it works?</h1>
-                    <h1 class="heading text-purple text-end quiche-bold">Artist/Studio</h1>
+                    <h1 class="heading text-purple text-center quiche-bold">Artist/Studio</h1>
                 </div>
             </div>
             <div class="row my-md-5 my-3">
                 <div class="col-md-6 col-12 my-5">
                     <div class="d-flex justify-content-start align-items-end">
-                        <img class="img-fluid parallax-img" src="/public/images/how-it-works/artist/1.png" alt="" />
+                        <img class="img-fluid" src="/public/images/how-it-works/artist/1.png" alt="" />
                     </div>
                 </div>
                 <div class="col-md-6 col-12 my-5">
-                    <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-start">
-                        <ul>
-                            <li class="how-it-works-title m-0 hk-bold">Create your<br /> menu, bring your<br /> business
+                    <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="text-center d-flex flex-column w-75">
+                            <span class="how-it-works-title quiche-bold text-purple">01
+                            </span>
+                            <span class="title hk-bold text-black">Create Menu
+                            </span>
+                            <span class="mt-4 description hk-regular text-grey">Create your menu, bring<br /> your
+                                business
                                 online.
-                            </li>
-                        </ul>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-12 my-5">
-                    <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-start">
-                        <ul>
-                            <li class="how-it-works-title m-0 hk-bold">Amp up earnings: verify, jazz your profile, and
-                                watch<br /> the magic
+                    <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="text-center d-flex flex-column w-75">
+                            <span class="how-it-works-title quiche-bold text-purple">02
+                            </span>
+                            <span class="title hk-bold text-black">Verify Yourself
+                            </span>
+                            <span class="mt-4 description hk-regular text-grey">Amp up earnings: verify, jazz
+                                your<br />profile, and
+                                watch the magic
                                 happen!
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12 my-5">
-                    <div class="d-flex justify-content-end align-items-start">
-                        <img class="img-fluid parallax-img" src="/public/images/how-it-works/artist/2.png" alt="" />
-                    </div>
-                </div>
-                <div class="col-md-6 col-12 my-5">
-                    <div class="d-flex justify-content-start align-items-center">
-                        <img class="img-fluid parallax-img" src="/public/images/how-it-works/artist/3.png" alt="" />
-                    </div>
-                </div>
-                <div class="col-md-6 col-12 my-5">
-                    <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-start">
-                        <ul>
-                            <li class="how-it-works-title m-0 hk-bold">Elevate your grooming<br /> game: share your
-                                profile<br /> for
-                                automated sales.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12 my-5">
-                    <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-start">
-                        <ul>
-                            <li class="how-it-works-title m-0 hk-bold">
-                                Amp up earnings: verify, jazz your profile, and
-                                watch<br /> the magic happen!
-                            </li>
-                        </ul>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-12 my-5">
                     <div class="d-flex justify-content-end align-items-center">
-                        <img class="img-fluid parallax-img" src="/public/images/how-it-works/artist/4.png" alt="" />
+                        <img class="img-fluid" src="/public/images/how-it-works/artist/2.png" alt="" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 my-5">
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img class="img-fluid" src="/public/images/how-it-works/artist/3.png" alt="" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 my-5">
+                    <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="text-center d-flex flex-column w-75">
+                            <span class="how-it-works-title quiche-bold text-purple">03
+                            </span>
+                            <span class="title hk-bold text-black">Start Sharing
+                            </span>
+                            <span class="mt-4 description hk-regular text-grey">Elevate your grooming game: share<br />
+                                your
+                                profile for
+                                automated sales.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 my-5">
+                    <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="text-center d-flex flex-column w-75">
+                            <span class="how-it-works-title quiche-bold text-purple">04
+                            </span>
+                            <span class="title hk-bold text-black">Start Bookings
+                            </span>
+                            <span class="mt-4 description hk-regular text-grey">Amp up earnings: verify, jazz your<br />
+                                profile, and
+                                watch the magic happen!
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 my-5">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <img class="img-fluid" src="/public/images/how-it-works/artist/4.png" alt="" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Work Smarter -->
-    <section class="my-2">
+    <section class="my-5">
         <div class="container">
             <div class="row my-md-5 my-3">
                 <div class="col-md-6 col-12">
@@ -383,7 +398,8 @@
             </div>
         </div>
     </section>
-    <section class="my-2">
+    <!-- Let's Connect -->
+    <section class="my-5 py-5">
         <div class="container">
             <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-center">
                 <h1 class="title hk-bold text-center">Let's <span class="text-purple quiche-bold">connect.</span>
@@ -410,6 +426,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"></script>
     <script src="/script/index.js"></script>
+    <script src="/script/gsap.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 </body>
 
 </html>

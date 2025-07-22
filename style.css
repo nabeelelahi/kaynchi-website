@@ -50,9 +50,6 @@
 }
 
 
-
-
-
 /* Fonts */
 
 @font-face {
@@ -110,6 +107,41 @@
 }
 
 
+.bg-pink {
+    background-color: #FDF7FF;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: #9A9A9A;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: #1E1E1E;
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #84668C;
+    color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
+
+
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
@@ -118,22 +150,22 @@
         font-size: 35px;
         line-height: 35px;
     }
-    
-    .description{
+
+    .description {
         font-size: 20px;
         line-height: 20px;
     }
-    
-    .heading{
+
+    .heading {
         font-size: 40px;
         line-height: 40px;
     }
 
-    .how-it-works-title{
+    .how-it-works-title {
         font-size: 25px;
     }
 
-    .hidden-sm{
+    .hidden-sm {
         display: none;
     }
 
