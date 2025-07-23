@@ -1,3 +1,10 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+}
+
 .text-purple {
     color: #84668C;
 }
@@ -47,6 +54,10 @@
 
 .parallax-img {
     width: 444px;
+}
+
+.show-sm {
+    display: none !important;
 }
 
 
@@ -111,6 +122,14 @@
     background-color: #FDF7FF;
 }
 
+.tab {
+    border-radius: 25px;
+}
+
+.w-75-percent {
+    width: 75%;
+}
+
 /* Style the buttons that are used to open the tab content */
 .tab button {
     background-color: inherit;
@@ -146,6 +165,15 @@
 
 @media only screen and (max-width: 768px) {
 
+    .w-75-percent {
+        width: 100%;
+    }
+
+    .tablinks {
+        width: 96%;
+        margin: 0px 5px;
+    }
+
     .title {
         font-size: 35px;
         line-height: 35px;
@@ -166,7 +194,11 @@
     }
 
     .hidden-sm {
-        display: none;
+        display: none !important;
+    }
+
+    .show-sm {
+        display: block !important;
     }
 
 }
@@ -265,27 +297,4 @@ a.btn-google {
     left: 40px;
     font-size: 10px;
     font-weight: 400;
-}
-
-/* Card Over Card Animation */
-
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Empty sections with grey background */
-.empty-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-
-/* Each card wrapper has 15vh top padding */
-.card-wrapper {
-    position: relative;
-    margin: auto;
 }
