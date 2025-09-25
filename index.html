@@ -190,7 +190,7 @@
             }
 
             .tablinks {
-                width: 96%;
+                /* width: 96%; */
                 margin: 0px 5px;
             }
 
@@ -322,6 +322,7 @@
         .w-19 {
             width: 19%;
         }
+
         .w-24 {
             width: 22%;
         }
@@ -443,13 +444,13 @@
     <!-- Card Section -->
     <section class="my-5">
         <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center">
+            <div class="d-flex align-items-center justify-content-center">
                 <div class="tab bg-pink p-md-2 p-3">
-                    <button class="tablinks me-2 px-5 py-2 rounded-pill hk-bold active"
+                    <button class="tablinks me-2 px-md-5 py-2 rounded-pill hk-bold active"
                         onclick="openCity(event, 'Artist')">Artist</button>
-                    <button class="tablinks mx-2 px-5 py-2 rounded-pill hk-bold"
+                    <button class="tablinks mx-2 px-md-5 py-2 rounded-pill hk-bold"
                         onclick="openCity(event, 'Studio')">Studio</button>
-                    <button class="tablinks mx-2 px-5 py-2 rounded-pill hk-bold"
+                    <button class="tablinks mx-2 px-md-5 py-2 rounded-pill hk-bold"
                         onclick="openCity(event, 'Consumer')">Consumer</button>
                 </div>
             </div>
@@ -781,7 +782,9 @@
                 </span>
                 <div class="d-flex justify-content-center align-items-center flex-wrap my-5">
                     <img src="/public/icons/youtube.webp" width="100" class="img-fluid m-2" alt="youtube" />
-                    <img src="/public/icons/instagram.webp" width="100" class="img-fluid m-2" alt="instagram" />
+                    <a target="_blank" href="https://www.instagram.com/wearekaynchi/">
+                        <img src="/public/icons/instagram.webp" width="100" class="img-fluid m-2" alt="instagram" />
+                    </a>
                     <!-- <img src="/public/icons/facebook.webp" width="100" class="img-fluid m-2" alt="facebook" />
                     <img src="/public/icons/tiktok.webp" width="100" class="img-fluid m-2" alt="tiktok" /> -->
                     <img src="/public/icons/linkedin.webp" width="100" class="img-fluid m-2" alt="linkedin" />
@@ -794,27 +797,51 @@
         <div class="container">
             <div class="row py-5">
                 <div class="col-lg-6 col-12">
-                    <img class="w-50" width="" src="/public/images/footer-logo.webp" alt="" />
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="d-flex align-items-center justify-content-end my-3">
-                        <a class="btn btn-google" href="#" title="Google Play">Google Play</a>
-                        <a href="/" tabIndex="0"><img class="bn46"
-                                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                                alt="bn45" /></a>
+                    <img class="w-50 hidden-sm" width="" src="/public/images/footer-logo.webp" alt="" />
+                    <div class="show-sm">
+                        <div class="d-flex justify-content-center">
+                            <img class="w-50" width="" src="/public/images/footer-logo.webp" alt="" />
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <div class="mt-5 hk-regular">
+                    <div class="hidden-sm">
+                        <div class="d-flex align-items-center justify-content-end my-3">
+                            <a class="btn btn-google" href="#" title="Google Play">Google Play</a>
+                            <a href="/" tabIndex="0"><img class="bn46"
+                                    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                    alt="bn45" /></a>
+                        </div>
+                    </div>
+                    <div class="show-sm">
+                        <div class="d-flex align-items-center justify-content-center my-3">
+                            <a class="btn btn-google" href="#" title="Google Play">Google Play</a>
+                            <a href="/" tabIndex="0"><img class="bn46"
+                                    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                    alt="bn45" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="mt-5 hk-regular hidden-sm">
+                        2025 @ Kaynchi. All rights reserved.
+                    </div>
+                    <div class="mt-2 hk-regular text-center show-sm">
                         2025 @ Kaynchi. All rights reserved.
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <div class="mt-5 d-flex align-items-center justify-content-end">
+                    <div class="mt-5 d-flex align-items-center justify-content-end hidden-sm">
                         <a target="_blank" href="privacy-policy.html" role="button"
                             class="mx-2 hk-regular text-black text-decoration-none">Privacy Policy</a>
                         <a target="_blank" href="terms-and-conditions.html" role="button"
                             class="mx-2 hk-regular text-dark text-decoration-none">Terms and Conditions</a>
+                    </div>
+                    <div class="mt-2 d-flex align-items-center justify-content-center">
+                        <a target="_blank" href="privacy-policy.html" role="button"
+                            class="mx-2 hk-regular text-black text-decoration-none show-sm">Privacy Policy</a>
+                        <a target="_blank" href="terms-and-conditions.html" role="button"
+                            class="mx-2 hk-regular text-dark text-decoration-none show-sm">Terms and Conditions</a>
                     </div>
                 </div>
             </div>
