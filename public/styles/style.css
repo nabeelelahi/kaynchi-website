@@ -183,8 +183,9 @@ body {
     }
 
     .title {
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 34px;
+        line-height: 34px;
+        margin-bottom:20px ;
     }
 
     .description {
@@ -223,7 +224,7 @@ a.btn-google {
 }
 
 .btn {
-    padding: 10px 16px;
+    padding: 10px 18px;
     margin: 5px;
     font-size: 18px;
     line-height: 1.3333333;
